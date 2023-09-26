@@ -1,0 +1,126 @@
+header{
+    height: 150px;
+    position: sticky;
+    top: 0;
+    z-index: 9999999999;
+    
+   
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    // border-bottom: 2px solid black;
+    transition: all 1s;
+    background-color: white;
+
+    .nav-link{
+        a{
+            margin-left: 46px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #000;
+        }
+        a:hover{
+            color: grey;
+        }
+    }
+    .togl{
+        width: 50px;
+    }
+    
+}
+.nav-togl{
+    display: none;
+}
+.togle{
+    .nav-togl{
+    display: block ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 1000px;
+    background-color:white;
+    padding-left: 20px;
+    z-index: 999999999999999;
+     
+    a{
+        display: block;
+        margin-top: 30px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #000;
+        
+    }
+    a:hover{
+        color: grey;
+    }
+    .yoqbol{
+        width: 15px;
+        margin-right: 20px;
+    }
+    div{
+        display: flex;
+        justify-content: space-between;
+    }
+    }
+}
+.drk{
+    padding: 5px;
+    border-radius: 20px;
+    width: 60px;
+    margin-top: 30px;
+    background-color: rgb(203, 203, 203);
+    border: 1px solid black;
+    div{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: black;
+        
+    }
+}
+.dark{
+    background-color: #000;
+    color: white;
+    .nav-togl{
+        background-color: #000;
+        a{
+            color: white;
+        }
+        svg{
+            padding: 10px;
+            width: 100px;
+            height: 10px;
+            background-color: white;
+        }
+    }
+    .drk{
+        background-color: white;
+        div{
+
+            margin-left: 30px;
+            transition: all 1s;
+        }
+    }
+}
+
+
+@media screen and (max-width:1000px) {
+    .nav-link{
+        display: none;
+    }
+    .togl{
+        display: block;
+    }
+}
+@media screen and (min-width:1000px){
+    .togl{
+        display: none;
+    }
+}
